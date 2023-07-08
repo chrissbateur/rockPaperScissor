@@ -1,0 +1,57 @@
+* {
+   
+    font-family: poppins;
+}
+.container {
+    width: 45%;
+    margin: 2rem auto; 
+    padding: 2rem;
+    justify-content: center;
+    
+    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.40);
+
+}
+.container :is(button) {
+    padding: 3rem;
+    cursor: pointer;
+    border: 0;
+    font-weight: 700;
+    margin: .4rem;
+    transition:0.1s;
+    justify-content: center;
+
+    
+}
+.container h1 {
+    width: 78%;
+    border-left: 1rem solid green;
+    margin:3px  auto ;
+    text-align: center;
+
+}
+.container :is(#paper,#scissors,#rock) {
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 4rem;
+}
+.container button:hover {
+    color: transparent;
+}
+.container #rock:hover {
+    /* <a href="https://www.flaticon.com/free-icons/fist" title="fist icons">Fist icons created by Cuputo - Flaticon</a> */
+
+    background-image: url('images/fist.png');
+   
+}
+.container #paper:hover{
+    
+    background-image: url('images/paper.png');
+   
+}
+.container #scissors:hover{
+    /*<a href="https://www.flaticon.com/free-icons/scissors" title="scissors icons">Scissors icons created by Cap Cool - Flaticon</a> */
+    background-image: url('images/scissors.png');
+}
+
+
+
